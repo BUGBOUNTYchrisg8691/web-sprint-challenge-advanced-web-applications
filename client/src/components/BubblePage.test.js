@@ -19,6 +19,12 @@ test("Fetches data and renders the bubbles", async () => {
   // Finish this test
   const { rerender } = render(<BubblePage colorList={[]} />);
   rerender(<BubblePage colorList={mockData} />);
-  const redBtn = screen.findByRole("span");
-  console.log(redBtn);
+  const colorTags = screen.findAllByRole("span");
+  console.log(colorTags);
+  // expect(colorTags).toHaveLength(2);
+  // const redTag = screen.findByText(/red/i);
+  // const blackTag = screen.findByText(/black/i);
+
+  // expect(redTag).toHaveValue("red");
+  // expect(blackTag).toHaveValue("black");
 });
