@@ -41,7 +41,7 @@ const Login = () => {
           name="username"
           value={formValues.username}
           onChange={handleChange}
-          placeholder="Jerkoff"
+          placeholder="Enter Username"
         />
         <input
           type="password"
